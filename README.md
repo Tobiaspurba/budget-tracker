@@ -1,20 +1,18 @@
-# budget-tracker
+Untuk memaksimalkan penggunaan, disarankan melakukan step-step berikut:
 
-In this series for Android development with Kotlin for beginners, you will learn how to make a budget tracker app from start to finish.  Together, through 7 lessons, we'll build this application, a budget tracker where:
+1. pada file 'build.gradle (module: app)' tambahkan pada DEPENDENCIES kode berikut:
 
-- You can set budgets
-- You can track your expenses
-- You can add and update transactions, remove and undo the action
-- And the transactions will be persistent in your phone memory
+          implementation 'com.google.android.material:material:1.4.0-alpha02'
+      
+          def room_version = "2.2.6"
+      
+          implementation "androidx.room:room-runtime:$room_version"
+          kapt "androidx.room:room-compiler:$room_version"
+      
+          // optional - Kotlin Extensions and Coroutines support for Room
+          implementation "androidx.room:room-ktx:$room_version"
 
-At the end of this series you will learn about 
-
-- Android Studio, the official Android Development Environment
-- XML layouts and how to used them to make the app UI
-- Interacting and updating the UI with Kotlin
-- Generate and use drawable icons
-- The RecyclerView and its Adapter
-- Why you should use third-party libraries like material components and  how to include them in your project
-- And finally how to use the Android Room Library to store app data in the local memory
-
-This sounds fun? See you on my [YouTube Channel](https://www.youtube.com/playlist?list=PLpZQVidZ65jPUF-o0LUvkY-XVAAkvL-Xb) to get into it!
+2. Pastikan Device Emulator men-support API diatas 30, dengan android requirement minimal 11.0 (Nougut).
+3. Aplikasi menggunakan build tools versi 30.0.2 dengan target SDK versi 30.
+4. Jalankan.
+5. Selamat menikmati!
