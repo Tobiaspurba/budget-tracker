@@ -11,8 +11,10 @@ Untuk memaksimalkan penggunaan, disarankan melakukan step-step berikut:
       
           // optional - Kotlin Extensions and Coroutines support for Room
           implementation "androidx.room:room-ktx:$room_version"
+   
+   NOTE: JIKA KODE DIATAS SUDAH ADA, TIDAK PERLU DITAMBAH LAGI.
 
-2. Pastikan Device Emulator men-support API diatas 30, dengan android requirement minimal 11.0 (Nougut).
-3. Aplikasi menggunakan build tools versi 30.0.2 dengan target SDK versi 30.
-4. Jalankan.
-5. Selamat menikmati!
+3. Pastikan Device Emulator men-support API diatas 30, dengan android requirement minimal 11.0 (Nougut).
+4. Aplikasi menggunakan build tools versi 30.0.2 dengan target SDK versi 30.
+5. Jalankan.
+6. Selamat menikmati!
